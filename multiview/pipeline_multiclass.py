@@ -107,6 +107,7 @@ class StableUnCLIPImg2ImgPipeline(DiffusionPipeline):
         self.vae_scale_factor = 2 ** (len(self.vae.config.block_out_channels) - 1)
         self.image_processor = VaeImageProcessor(vae_scale_factor=self.vae_scale_factor)
         self.num_views: int = num_views
+        self.model_cpu_offload_seq = "text_encoder->image_encoder->image_normalizer->vae->unet->vae"
     # Copied from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline.enable_vae_slicing
     def enable_vae_slicing(self):
         r"""

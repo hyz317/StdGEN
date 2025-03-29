@@ -2,3 +2,6 @@ ckpt
 result
 **/__pycache__/
 **/.DS_Store
+venv
+nvdiffrast
+*.whl

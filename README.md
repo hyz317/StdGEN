@@ -62,6 +62,8 @@ python infer_canonicalize.py --input_dir ./input_cases --output_dir ./result/apo
 # stage 1.2: A-pose image to multi-view image
 # decomposed generation (by default)
 python infer_multiview.py --input_dir ./result/apose --output_dir ./result/multiview
+# with model offloading to save VRAM (may be slower)
+python infer_multiview.py --input_dir ./result/apose --output_dir ./result/multiview --low_vram
 # If you only need non-decomposed generation, then run:
 python infer_multiview.py --input_dir ./result/apose --output_dir ./result/multiview --num_levels 1
 
