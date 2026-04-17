@@ -118,11 +118,12 @@ The train/test data list can be found at `data/train_list.json` and `data/test_l
 If you find our work useful, please kindly cite:
 
 ```
-@article{he2024stdgen,
-  title={StdGEN: Semantic-Decomposed 3D Character Generation from Single Images},
+@inproceedings{he2025stdgen,
+  title={Stdgen: Semantic-decomposed 3d character generation from single images},
   author={He, Yuze and Zhou, Yanning and Zhao, Wang and Wu, Zhongkai and Xiao, Kaiwen and Yang, Wei and Liu, Yong-Jin and Han, Xiao},
-  journal={arXiv preprint arXiv:2411.05738},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={26345--26355},
+  year={2025}
 }
 ```
 
